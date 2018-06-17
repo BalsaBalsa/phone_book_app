@@ -1,0 +1,306 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #eee;
+}
+
+#app {
+  font-family: 'Lato', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #333;
+}
+
+h1, h2 {
+  font-weight: normal;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 0 10px;
+}
+
+a {
+  color: #42b983;
+}
+
+button{
+  background-color: transparent;
+  border: 2px solid black;
+  outline:0;
+}
+
+.header {
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 15px;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.contact_list {
+  background-color: #fff;
+}
+
+.list_header {
+  text-align: center;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+  letter-spacing: 1px;
+  font-size: 24px;
+}
+
+.inner_cnt {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.search_box {
+  padding: 13px;
+}
+
+.cnt_inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.input_label {
+  text-transform: uppercase;
+  font-family: 'Lato' ,sans-serif;
+  font-weight: 900;
+  letter-spacing: .5px;
+  width: 85%;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  display: block;
+  font-size: 13px;
+  text-align: left;
+}
+
+.inner_input {
+  display: block;
+  margin: 25px auto;
+  margin-top: 0;
+  height: 30px;
+  background: none;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid #222;
+  padding: 0 15px;
+  width: 75%;
+  color: #222;
+  font-size: 16px;
+}
+
+.inner_input:focus {
+  outline: none;
+}
+
+.inner_input::placeholder {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: .5px;
+}
+
+.add_btn {
+  margin: 0 auto;
+  margin-bottom: 25px;
+  display: block;
+  width: 85%;
+  padding: 8px 45px;
+  border: 1px solid #222;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: .3s all;
+}
+
+.contact_listing {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+
+}
+
+.contact_listing:nth-last-child(1) {
+  border-bottom: 0;
+}
+
+.contact_listing_inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.listing_info {
+  display: block;
+  text-align: left;
+  margin: 15px 0 15px 0;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.listing_btn {
+  display: block;
+  padding: 8px 10px;
+  border: 1px solid #333;
+  letter-spacing: .5px;
+  font-weight: 400;
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  transition: .3s all;
+}
+
+.listing_inner_first {
+
+}
+
+.listing_inner_second {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.edit_contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.inner_input_edit {  
+  display: block;
+  margin: 25px auto;
+  margin-top: 0;
+  height: 30px;
+  background: none;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid #222;
+  padding: 0 15px;
+  width: 85%;
+  color: #222;
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.inner_input_edit:focus {
+  outline: 0;
+}
+
+.inner_edit_btn {
+  margin: 0 auto;
+  margin-bottom: 25px;
+  display: block;
+  width: 95%;
+  padding: 8px 45px;
+  border: 1px solid #222;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: .3s all;
+}
+
+.inner_edit_btn:focus {
+  outline: 0;
+}
+
+
+@media (min-width: 768px) {
+  
+}
+
+@media (min-width: 992px) {
+  .inner_input,
+  .inner_input_edit {
+    width: 45%;
+    margin-bottom: 35px;
+  }
+
+  .input_label {
+    width: 48%;
+  }
+
+  .add_btn {
+    width: 48%;
+    margin-bottom: 35px;
+  }
+
+  .add_btn:hover {
+    background-color: #000;
+    color: #fff;
+    cursor:pointer ;
+  }
+
+  .inner_edit_btn {
+    width: 50%;
+  }
+
+  .inner_edit_btn:hover {
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .inner_edit_btn:focus {
+    outline:0;
+  }
+
+  .listing_btn:hover {
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .listing_btn:focus {
+    outline: 0;
+  }
+
+  .contact_list {
+    background-color: #fff;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .listing_info {
+    font-size: 16px;
+  }
+
+  .header {
+    margin: 35px;
+    font-size: 50px;
+  }
+
+  .list_header {
+    margin: 25px;
+    padding-bottom: 25px;
+    font-size: 35px;
+  }
+
+  .container {
+    padding-bottom: 70px;
+  }
+}
+
+@media (min-width: 1200px) {
+
+}
